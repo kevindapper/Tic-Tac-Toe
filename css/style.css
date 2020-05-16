@@ -1,0 +1,108 @@
+*
+{
+	background-color: #9DB6C2;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	user-select:none;
+	color: white;
+}
+#menu{
+	height: 100px;
+	width: 300px;
+	border: 2px solid #96aeba;
+	box-shadow: 4px 4px 10px slategrey;
+	margin: 20px auto;
+}
+#menu div
+{
+	border: 1px solid red;
+	display: inline-block;
+}
+#menu div:first-child
+{
+	border: 1px solid red;
+	width: 40px;
+	display:block;
+	text-align: center;
+	width: auto;
+	margin-bottom: 15px;
+}
+#menu div:nth-child(3)
+{
+	border: 1px solid yellow;
+	width: 70px;
+}
+#start
+{
+	height: 30px;
+	width: 50px;
+	border: 1px solid red;
+}
+body
+{
+	justify-content: space-around;
+	text-align: center;
+	display: flex;
+}
+
+#game-board
+{
+	margin: 20px auto;
+	margin-top: 60px;
+}
+div[id^="row-"] {clear: both;}
+div[id^="row-"] div
+{
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	float: left;
+	text-align: center;
+}
+#row-1 div, #row-2 div, #row-3 div
+{	
+	margin-bottom: 15px;
+	box-shadow: 4px 4px 10px slategrey;
+	font-size: 100px;
+	font-weight: strong;
+	transition-duration: 0.6s;
+	cursor: pointer;
+	border: 2px solid #96aeba;
+}
+div[id^="row-"] div:first-child, div[id^="row-"] div:nth-child(2)
+{	
+	margin-right: 15px;
+}
+#row-1 div:hover, #row-2 div:hover, #row-3 div:hover
+{
+	transition-duration: 0.6s;
+	transform: rotate(2deg);
+	background-color: #d3dde2;
+}
+#row-4 div
+{
+	height: 40px;
+	box-shadow:4px 4px 15px slategrey;
+	padding-top: 8px;
+	transition-duration: 0.6s;
+}
+.show
+{
+	display: block;
+}
+.hide
+{
+	display: none;
+}
+.highlight
+{
+	transition-duration: 0.6s;
+	color: yellow;
+	border: 2px solid yellow;
+}
+.no-highlight
+{
+	box-shadow:4px 4px 15px slategrey;
+}

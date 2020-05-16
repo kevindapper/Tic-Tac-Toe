@@ -1,0 +1,97 @@
+*
+{
+	background-color: #9DB6C2;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	user-select: none;
+	color: white;
+}
+
+body
+{
+	justify-content: space-around;
+	text-align: center;
+	display: flex;
+}
+
+#game-board
+{
+	margin: 18px auto;
+
+}
+div[id^="row-"] {clear: both;}
+div[id^="row-"] div
+{
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	float: left;
+	text-align: center;
+}
+#row-1 div, #row-2 div, #row-3 div
+{	
+	margin-bottom: 15px;
+	box-shadow: 4px 4px 10px slategrey;
+	font-size: 100px;
+	font-weight: strong;
+	transition-duration: 0.6s;
+	cursor: pointer;
+	border: 2px solid #96aeba;
+}
+div[id^="row-"] div:first-child, div[id^="row-"] div:nth-child(2)
+{	
+	margin-right: 15px;
+}
+#row-1 div:hover, #row-2 div:hover, #row-3 div:hover, button:hover
+{
+	transition-duration: 0.6s;
+	transform: translateY(-5px);
+	transform: translateX(-5px);	
+	background-color: #d3dde2;
+	color: #9DB6C2;
+}
+#row-4 div, button
+{
+	height: 60px;
+	box-shadow:4px 4px 15px slategrey;
+	padding-top: 10px;
+	transition-duration: 0.4s;
+	margin-bottom: 35px;
+}
+#row-5 div
+{
+	height: 150px;
+	width: 480px;
+	box-shadow:4px 4px 15px slategrey;
+	font-size: 60px;
+	transition-duration: 0.4s;
+	padding-top: 35px;
+}
+#row-6 button
+{
+	border: none;
+	font-size: 20px;
+	width: 150px;
+	cursor: pointer;
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+.show
+{
+	opacity: 1;
+}
+.hide
+{
+	opacity: 0;
+}
+.highlight
+{
+	transition-duration: 0.4s;
+	transform: translateY(15px);
+}
+.no-highlight
+{
+	box-shadow:4px 4px 15px slategrey;
+}

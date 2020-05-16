@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Tic-Tac-Toe</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="hide" id="menu">
+			<div id="prompt1">Enter Player Names</div>
+			<div id="prompt1">test</div>
+			<div id="start" onclick="start()">play</div>
+			<div id="prompt2">test</div>
+		</div>
+		<div class="show" id="game-board">
+			<div id="row-1"> 
+				<div onclick="play(this, 1)"></div>
+				<div onclick="play(this, 2)"></div>
+				<div onclick="play(this, 4)"></div> 
+			</div>
+			<div id="row-2"> 
+				<div onclick="play(this, 8)"></div>
+				<div onclick="play(this, 16)"></div>
+				<div onclick="play(this, 32)"></div>
+			</div>
+			<div id="row-3"> 
+				<div onclick="play(this, 64)"></div>
+				<div onclick="play(this, 128)"></div>
+				<div onclick="play(this, 256)"></div>
+			</div>
+			<div id="row-4"> 
+				<div class="highlight" id="player-1">Player 1: <span id="p1-score">0</span></div>
+				<div id="tie">Tie: <span id="tie-score">0</span></div>
+				<div class="no-highlight" id="player-2">Player 2: <span id="p2-score">0</span></div>
+			</div>
+		</div>
+	</body>
+</html>

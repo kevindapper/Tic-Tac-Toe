@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Tic-Tac-Toe</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body onload="start()">
+		<div class="show" id="game-board" >
+			<div id="row-1"> 
+				<div onclick="play(this, 1)"></div>
+				<div onclick="play(this, 2)"></div>
+				<div onclick="play(this, 4)"></div> 
+			</div>
+			<div id="row-2"> 
+				<div onclick="play(this, 8)"></div>
+				<div onclick="play(this, 16)"></div>
+				<div onclick="play(this, 32)"></div>
+			</div>
+			<div id="row-3"> 
+				<div onclick="play(this, 64)"></div>
+				<div onclick="play(this, 128)"></div>
+				<div onclick="play(this, 256)"></div>
+			</div>
+			<div id="row-4"> 
+				<div class="highlight" id="player-1"><span id="name1">Player 1: </span><span id="score1">0</span><br><span id="turn1">turn</span></div>
+				<div id="tie">Tie: <span id="tie-score">0</span></div>
+				<div class="no-highlight" id="player-2"><span id="name2">Player 2: </span><span id="score2">0</span><br><span id="turn2"> </span></div>
+			</div>
+			<div id="row-5"> 
+				<div class="hide" id="winner"><span id="winner-name">PLAYER</span> <span id="setMessage">wins</span></div>
+			</div>
+			<div class="hide" id="row-6">
+				<button onclick="start()">Play Again</button>
+			</div>
+		</div>
+	</body>
+</html>
